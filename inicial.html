@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurLa Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa583af158.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FurLa Clothing Logo" class="logo-image">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="inicial.html">Shop</a>
+                    <a href="https://wa.me/44988313191" target="_blank">Contato</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="cart.html" id="cart-link">Carrinho (<span id="cart-count">0</span>)</a>
+                </nav>
+            </div>
+            <div class="sociais">
+                <a href="https://instagram.com/furlaclothing" target="_blank">
+                    <button aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                </a>
+                <a href="https://facebook.com/furlaclothing" target="_blank">
+                    <button aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </button>
+                </a>
+                <a href="https://instagram.com/furlaclothing" target="_blank">
+                    <button aria-label="Perfil">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-card-container">
+            <img src="assets/camisetapreta.jpeg" alt="Imagem da Camiseta Preta" class="product-image">
+            <div class="card">
+                <h1>Camiseta Preta</h1>
+                <h2>100% algodão oversized</h2>
+                <span>R$ 89.00</span>
+                <button onclick="addToCart('Camiseta Preta', 89.00)">Comprar</button>
+            </div>
+        </div>
+            
+        <div class="product-card-container">
+            <img src="assets/camisetabranca.jpeg" alt="Imagem da Camiseta Branca" class="product-image">
+            <div class="card">
+                <h1>Camiseta Branca</h1>
+                <h2>100% algodão oversized</h2>
+                <span>R$ 96.00</span>
+                <button onclick="addToCart('Camiseta Branca', 96.00)">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product-card-container">
+            <img src="assets/camisetameio.jpeg" alt="Imagem da Camiseta Simples" class="product-image">
+            <div class="card">
+                <h1>Camiseta Simples</h1>
+                <h2>100% algodão oversized</h2>
+                <span>R$ 90.00</span>
+                <button onclick="addToCart('Camiseta Simples', 90.00)">Comprar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FurLa Clothing. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

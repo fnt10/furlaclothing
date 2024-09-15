@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - FurLa Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa583af158.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FurLa Clothing Logo" class="logo-image">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="inicial.html">Shop</a>
+                    <a href="https://wa.me/44988313191" target="_blank">Contato</a>
+                    <a href="#">Sobre</a>
+                    <a href="cart.html" id="cart-link">Carrinho (<span id="cart-count">0</span>)</a>
+                </nav>
+            </div>
+            <div class="sociais">
+                <a href="https://instagram.com/furlaclothing" target="_blank">
+                    <button aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                </a>
+                <a href="https://facebook.com/furlaclothing" target="_blank">
+                    <button aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </button>
+                </a>
+                <a href="https://instagram.com/furlaclothing" target="_blank">
+                    <button aria-label="Perfil">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h1>Seu Carrinho</h1>
+            <div id="cart-items">
+                <!-- Produtos do carrinho serão inseridos aqui via JavaScript -->
+            </div>
+            <div class="cart-total">
+                <span>Total: R$ <span id="total-value">0,00</span></span>
+            </div>
+            <button id="checkout-button">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FurLa Clothing. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
